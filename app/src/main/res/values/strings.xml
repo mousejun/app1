@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 앱 이름 (기본) -->
+    <string name="app_name">커뮤니케이션</string>
+
+    <!-- WebViewFragment에서 사용할 문자열 -->
+    <string name="go_back">뒤로가기</string>
+    <string name="go_forward">앞으로가기</string>
+    <string name="share_page">페이지 공유</string>
+    <string name="refresh">새로고침</string>
+    <string name="bookmark">북마크</string>
+    <string name="bookmark_initial">B</string>
+    <string name="go_home">처음으로</string>
+    <string name="home_initial">H</string>
+
+    <!-- 다이얼로그 공유 페이지에서 사용할 문자열 -->
+    <string name="dialog_title_share_page">&lt;페이지 공유&gt;</string>
+    <string name="label_page_title">페이지 제목:</string>
+    <string name="label_url">주소(URL):</string>
+    <string name="button_share_sns">[SNS공유]</string>
+    <string name="button_copy_url">[주소복사]</string>
+
+    <!-- BookmarkFragment에서 사용할 문자열 -->
+    <string name="bookmark_all">ALL</string>
+    <string name="button_start">[START]</string>
+    <string name="news_khan">경향신문</string>
+    <string name="news_kookmin">국민일보</string>
+    <string name="news_nocut">노컷뉴스</string>
+    <string name="news_newsis">뉴시스</string>
+    <string name="news_kdpress">데일리 경제</string>
+    <string name="news_donga">동아일보</string>
+    <string name="news_mydaily">마이데일리</string>
+    <string name="news_mk">매일경제</string>
+    <string name="news_mt">머니투데이</string>
+    <string name="news_munhwa">문화일보</string>
+    <string name="news_mediatoday">미디어오늘</string>
+    <string name="news_vop">민중의 소리</string>
+    <string name="news_sedaily">서울경제</string>
+    <string name="news_seoul">서울신문</string>
+    <string name="news_segye">세계일보</string>
+    <string name="news_sports_khan">스포츠경향</string>
+    <string name="news_sports_donga">스포츠동아</string>
+    <string name="news_sports_seoul">스포츠서울</string>
+    <string name="news_sports_chosun">스포츠조선</string>
+    <string name="news_stoo">스포츠투데이</string>
+    <string name="news_sports_hankooki">스포츠한국</string>
+    <string name="news_asiae">아시아경제</string>
+    <string name="news_asiatoday">아시아투데이</string>
+    <string name="news_ajunews">아주경제</string>
+    <string name="news_yna">연합뉴스</string>
+    <string name="news_ohmynews">오마이뉴스</string>
+    <string name="news_edaily">이데일리</string>
+    <string name="news_etoday">이투데이</string>
+    <string name="news_isplus">일간스포츠</string>
+    <string name="news_chosun">조선일보</string>
+    <string name="news_koreatimes">코리아 타임즈</string>
+    <string name="news_koreaherald">코리아 헤럴드</string>
+    <string name="news_kukinews">쿠키뉴스</string>
+    <string name="news_fnnews">파이낸셜 뉴스</string>
+    <string name="news_pressian">프레시안</string>
+    <string name="news_hani">한겨레</string>
+    <string name="news_hankyung">한국경제</string>
+    <string name="news_hankooki">한국아이닷컴</string>
+    <string name="news_hankookilbo">한국일보</string>
+    <string name="news_news1">NEWS1</string>
+    <string name="news_osen">OSEN</string>
+
+    <!-- 코치마크에서 사용할 문자열 (수정된 최종 버전) -->
+    <string name="coach_mark_swipe">화면을 좌우로 스와이프하여\n이전/다음 사이트로 이동할 수 있습니다.</string>
+
+    <string name="coach_mark_close">그만 보기</string>
+
+</resources>

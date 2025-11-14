@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"
+        android:progressTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:background="?attr/colorSurface"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- [추가] H(Home) 버튼 -->
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/go_home"
+            android:text="@string/home_initial"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4682B4"
+            android:padding="0dp"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- 기존 버튼들 -->
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/go_back"
+            android:src="@android:drawable/ic_menu_revert"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            app:tint="?attr/colorOnSurface" />
+
+        <ImageButton
+            android:id="@+id/buttonForward"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/go_forward"
+            android:src="@android:drawable/ic_menu_revert"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            android:scaleX="-1"
+            android:layout_marginEnd="8dp"
+            app:tint="?attr/colorOnSurface" />
+
+        <ImageButton
+            android:id="@+id/buttonMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/share_page"
+            android:src="@android:drawable/ic_menu_share"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            app:tint="?attr/colorOnSurface" />
+
+        <Button
+            android:id="@+id/buttonRefresh"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="페이지 목록"
+            android:text="S"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4682B4"
+            android:padding="0dp"
+            android:gravity="center"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/buttonBookmark"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/bookmark"
+            android:text="@string/bookmark_initial"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#8B4513"
+            android:padding="0dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <!-- [추가] 코치마크 레이아웃을 포함하고, 처음엔 숨겨둠 -->
+    <include
+        android:id="@+id/coachMarkLayout"
+        layout="@layout/coach_mark_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
